@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header> 
+            <h1>Survey Form</h1>
+            <p>Thank you for coming 😀 Let's Share Our Insights Today</p>
+        </header>
+        <form action="post" class="s-form">
+            <div class="entries" >
+                <label for="name">Name</label> 
+                <input id="name" type="text" class="textbar" >
+            </div> 
+
+            <div class="entries">
+                <label for="mail">Email</label >
+                <input type="email" id="mail" class="textbar" >
+            </div>
+
+        <div class="entries">
+            <label for="number">Age</label>
+            <input type="number" class="textbar" >
+        </div>
+
+        <div class="entries">
+            <label for="radio"> What is your current level of education?</label> 
+           <input type="radio" name="options"> Middle School  </p>
+            <input type="radio" name="options"> High School  </p>
+           <input type="radio" name="options"> College (Undergraduate) </p>      
+           <input type="radio" name="options"> College (Postgraduate) </p>      
+           <input type="radio" name="options"> Other</p>      
+        </div>
+
+        <div class="entries"> 
+            <label for="select"> Which fields interest you the most?  </label>
+            <select name="role" id="role">
+                <option value="Student" selected="selected">Select from Below</option>
+                <option value="select">Science and Technology</option>
+                <option value="Student">Arts and Humanities </option>
+                <option value="Student">Business and Economics</option>
+                <option value="Student">Health and Medicine</option>
+                <option value="Student">Social Sciences</option>
+                <option value="Student" onclick="">Other</option>
+
+            </select>
+        </div>
+
+        <div class="entries">
+            <label for="radio">How do you rate the quality of education you are receiving in your field?            </label>
+           <input type="radio" name="options">  Excellent  </p>
+            <input type="radio" name="options"> Moderate  </p>
+           <input type="radio" name="options">  Very Poor </p>
+            
+        </div>
+
+        <div class="entries"> 
+            <label for="select">What motivated you to choose this field? </label>
+            <select name="role" id="role">
+                <option selected="selected" value="select">Select</option>
+                <option value="Student">Personal interest</option>
+                <option value="Student">Career opportunities</option>
+                <option value="Student">Parental influence</option>
+                <option value="Student">High school counselor/advisor recommendation</option>
+                <option value="Student">Other</option>
+            </select>
+        </div>
+
+        <div class="entries">
+            <p>What skills do you believe are most important for your future career? (Check all that apply)</p>
+            <label> 
+                <input type="checkbox" name="prefer"> Technical skills    
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer"> Communication skills    
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer"> Leadership skills   
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer">Critical thinking  
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer"> Teamwork   
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer"> Creativity   
+            </label>
+            <label> 
+                <input type="checkbox" name="prefer"> Other   
+            </label>
+        </div>
+        <br>
+        <div class="entries">
+            Any feedback or Would you recommend others in your field or any?  
+            <label for="textarea"> 
+                <textarea id="review" name="review" rows="4" cols="79"></textarea> 
+            </label>
+        </div>
+        <br>
+        <div class="entries"> 
+            <button class="btn" type="submit">Submit</button>
+        </div>
+     </form>
+    </div>
+</body>
+</html>
